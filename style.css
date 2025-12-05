@@ -39,7 +39,8 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 40px;
+
 }
 
 .content {
@@ -78,6 +79,7 @@ nav a {
     color: grey;
     margin-bottom: 25px;
     font-size: 15px;
+    position: relative;
 }
 
 
@@ -93,6 +95,12 @@ nav a {
     border-radius: 10px;
     background-color: #f4b238;
     border: 2px solid #f4b238;
+    transition: 0.3s ease;
+}
+
+.btn1:hover{
+    transform: translateY(-5px);
+    border: 2px solid black;
 }
 
 .btn2 {
@@ -100,17 +108,22 @@ nav a {
     padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid black;
+    transition: 0.3s ease;
 }
 
+.btn2:hover{
+    transform: translateY(-5px);
+    border: 2px solid black;
+}
 
 .img-right img {
     height: 650px;
     width: 750px;
-    margin: -506px 0px;
+    margin: -530px 0px;
     float: right;
 }
 
-.projects h1 {
+#nav-call h1 {
     text-align: center;
     font-size: 48px;
     justify-content: center;
@@ -131,10 +144,11 @@ nav a {
 
 .main-card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(750px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
     height: 170vh;
     width: 100%;
     margin: 0 auto;
+    gap: 20px;
 }
 
 .card {
@@ -150,9 +164,30 @@ nav a {
 .card-left {
     width: 50%;
     color: black;
-    padding: 40px;
+    padding: 80px 70px;
     background-color: white;
     height: 100%;
+
+}
+
+.card-head {
+    font-size: 35px;
+    font-family: Playfair Display;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.card-left>p {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    color: gray;
+}
+
+.btn3 {
+    padding: 10px 14px;
+    border-radius: 40px;
+    background-color: transparent;
 }
 
 .card-right {
@@ -162,5 +197,87 @@ nav a {
 
 .card-right img {
     background-size: cover;
-    height: 100vh;
+    height: 50vh;
+}
+
+#nav-call2 h1 {
+    text-align: center;
+    font-size: 48px;
+    justify-content: center;
+    font-family: Playfair Display;
+    font-weight: 700;
+    margin-top: 200px;
+}
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.contact-form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    background: #fff;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.send-btn {
+    width: 100px;
+    padding: 12px;
+    background: #f2c04f;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.send-btn:hover {
+    background: #e7b63f;
+}
+
+.footer-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logos a {
+    padding-right: 20px;
+    color: black;
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: 40px;
+    padding-bottom: 0px;
+}
+
+.footer-name h2{
+    font-size: 12px;
+    color: black;
+    margin-left: 675px;
+    margin-bottom: 40px;
 }
